@@ -6,11 +6,12 @@ import Products from "./componentes/Products"
 
 export function Home() {
   return (
-    <div>
+    <div className="min-h-screen">
       <Header />
-      <Hero />
-      <div className="mt-10"></div>
-      <Products />
+      <main className="mx-auto flex w-full max-w-6xl flex-col gap-20 px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+        <Hero />
+        <Products />
+      </main>
       <Footer />
     </div>
   )
