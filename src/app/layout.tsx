@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Providers from "./providers";
 
-// Configuração da Poppins
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-poppins", // Nome mais intuitivo
+  variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Meu Projeto Next.js",
-  description: "Usando a fonte Poppins",
+  title: "HOMME | Moda Masculina",
+  description: "Loja masculina com peças premium e estilo contemporâneo.",
 };
 
 export default function RootLayout({
@@ -21,10 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={`${poppins.variable} h-full antialiased`}>
-      {/* Aplicamos a classe da fonte aqui no body para ela ser a padrão */}
+    <html lang="pt-br" className={`${poppins.variable} h-full`}>
       <body className={`${poppins.className} min-h-full flex flex-col`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
