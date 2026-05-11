@@ -1,3 +1,4 @@
+import Duvidas from "./componentes/Duvidas"
 import Footer from "./componentes/Footer"
 import Header from "./componentes/Header"
 import Hero from "./componentes/Hero"
@@ -11,6 +12,7 @@ export function Home() {
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-20 px-4 pb-20 pt-8 sm:px-6 lg:px-8">
         <Hero />
         <Products />
+        <Duvidas />
       </main>
       <Footer />
     </div>

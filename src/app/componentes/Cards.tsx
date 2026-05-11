@@ -57,6 +57,7 @@ const Cards = ({ id, image, title, description, price, tag }: CardProps) => {
         <ShoppingBag className="size-4" />
         Adicionar à sacola
       </Button>
+
       <Button
         type="button"
         variant="outline"

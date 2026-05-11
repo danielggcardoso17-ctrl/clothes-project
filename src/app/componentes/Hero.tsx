@@ -27,7 +27,7 @@ const Hero = () => {
         <Button
           asChild
           size="lg"
-          className="bg-primary-foreground text-black px-5 py-5 rounded-full hover:text-white"
+          className="bg-primary-foreground text-black px-5 py-5 rounded-full hover:text-white dark:text-white dark:hover:text-black"
         >
           <Link href="#produtos">
             Ver produtos

@@ -11,6 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { ConfettiButton } from "@/components/ui/confetti"
 
 type AuthMode = "login" | "register"
 
@@ -41,11 +42,10 @@ const AuthModal = () => {
             <button
               type="button"
               onClick={() => setMode("login")}
-              className={`inline-flex h-9 items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors ${
-                mode === "login"
-                  ? "bg-background text-foreground shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={`inline-flex h-9 items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors ${mode === "login"
+                ? "bg-background text-foreground shadow-sm"
+                : "text-muted-foreground hover:text-foreground"
+                }`}
             >
               <LogIn className="size-4" />
               Entrar
@@ -53,11 +53,10 @@ const AuthModal = () => {
             <button
               type="button"
               onClick={() => setMode("register")}
-              className={`inline-flex h-9 items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors ${
-                mode === "register"
-                  ? "bg-background text-foreground shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={`inline-flex h-9 items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors ${mode === "register"
+                ? "bg-background text-foreground shadow-sm"
+                : "text-muted-foreground hover:text-foreground"
+                }`}
             >
               <UserRoundPlus className="size-4" />
               Cadastrar
@@ -96,9 +95,9 @@ const AuthModal = () => {
                 className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none ring-ring/50 transition-shadow focus:ring-2"
               />
             </div>
-            <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+            <ConfettiButton type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
               Entrar
-            </Button>
+            </ConfettiButton>
           </form>
         ) : (
           <form
