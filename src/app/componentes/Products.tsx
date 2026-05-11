@@ -1,3 +1,4 @@
+import { BorderBeam } from "@/components/ui/border-beam"
 import Cards from "./Cards"
 
 const products = [
@@ -82,8 +83,9 @@ const Products = () => {
             Uma curadoria pensada para homens que valorizam estilo, qualidade e conforto.
           </p>
         </div>
-        <span className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground">
+        <span className="relative overflow-hidden rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground">
           Frete grátis acima de R$ 299
+          <BorderBeam duration={5} size={50} />
         </span>
       </div>
 

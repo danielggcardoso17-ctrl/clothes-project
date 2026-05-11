@@ -1,6 +1,7 @@
 import Link from "next/link"
 import AuthModal from "./AuthModal"
 import CartSheet from "./CartSheet"
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -32,7 +33,8 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <AnimatedThemeToggler duration={600} fromCenter />
           <AuthModal />
           <CartSheet />
         </div>

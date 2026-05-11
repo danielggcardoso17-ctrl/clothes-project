@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const Footer = () => {
   return (
-    <footer id="contato" className="border-t border-border bg-primary text-primary-foreground/80">
+    <footer id="contato" className="bg-primary text-primary-foreground/80">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <h2 className="text-xl font-bold tracking-[0.16em] text-primary-foreground">HOMME</h2>
@@ -47,7 +47,7 @@ const Footer = () => {
             </li>
             <li className="inline-flex items-center gap-2">
               <MapPin className="size-4" />
-              São Paulo, Brasil
+              Belém, Brasil
             </li>
             <li>
               <a
@@ -70,7 +70,7 @@ const Footer = () => {
           <p className="mt-4 text-sm text-primary-foreground/70">
             Receba novidades e ofertas exclusivas da nova coleção.
           </p>
-          <div className="mt-4 flex gap-2">
+          <div className="mt-4 flex gap-2 items-center">
             <input
               type="email"
               placeholder="Seu e-mail"

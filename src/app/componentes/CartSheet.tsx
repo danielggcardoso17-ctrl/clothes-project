@@ -121,13 +121,13 @@ const CartSheet = () => {
               <Button
                 type="button"
                 variant="outline"
-                className="w-full"
+                className="w-full bg-gray-600 text-white"
                 onClick={clearCart}
                 disabled={items.length === 0}
               >
                 Limpar sacola
               </Button>
-              <Button type="button" className="w-full" disabled={items.length === 0}>
+              <Button type="button" className="w-full bg-green-500 text-black font-extrabold " disabled={items.length === 0}>
                 Finalizar compra
               </Button>
             </div>

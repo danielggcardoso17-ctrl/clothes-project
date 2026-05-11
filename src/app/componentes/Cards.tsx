@@ -4,6 +4,8 @@ import Image from "next/image"
 import { ShoppingBag } from "lucide-react"
 import { useCart } from "@/components/cart/cart-context"
 import { Button } from "@/components/ui/button"
+import { BorderBeam } from "@/components/ui/border-beam"
+
 
 interface CardProps {
   id: string
@@ -27,7 +29,7 @@ const Cards = ({ id, image, title, description, price, tag }: CardProps) => {
   }
 
   return (
-    <article className="group rounded-3xl border border-border bg-card p-3 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl">
+    <article className="relative overflow-hidden group rounded-3xl border border-border bg-card p-3 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl">
       <div className="relative overflow-hidden rounded-2xl bg-secondary">
         <span className="absolute left-3 top-3 z-10 rounded-full bg-accent px-2.5 py-1 text-xs font-medium text-accent-foreground">
           {tag}
@@ -63,6 +65,13 @@ const Cards = ({ id, image, title, description, price, tag }: CardProps) => {
       >
         Comprar agora
       </Button>
+      <BorderBeam
+        duration={8}
+        size={100}
+        colorFrom="#01eb95"
+        colorTo="#01ddae"
+      />
+
     </article>
   )
 }
